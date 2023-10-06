@@ -453,10 +453,36 @@ h3 {
 }
 
 .connect-button {
-  padding: 8px 16px;
+  padding: 6px 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+/* CSS for hiding the button by default */
+#buy-button {
+  display: block;
+}
+
+#qr-button{
+  display: none;
+}
+
+/* Media query for screens with max width 768px (typical mobile screens) */
+@media screen and (max-width: 768px) {
+  /* Hide the QR code image */
+  #qr-code {
+    display: none;
+  }
+
+  #qr-button{
+    display: block;
+  }
+  
+  /* Show the button */
+  #buy-button {
+    display: block;
+  }
 }

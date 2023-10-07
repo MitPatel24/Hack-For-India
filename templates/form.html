@@ -25,13 +25,13 @@
     <!-- Nav Logo & Name -->
     <div class="navbar-logo">
       <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/artifact-5806750-4886838.png?f=webp&w=256" />
-      <a href="index.html"><span>Name</span></a>
+      <a href="index.html"><span>AR-Crafter</span></a>
     </div>
 
     <!-- Nav menu -->
     <ul class="nav-menu">
-      <li><a class="active" href="../index.html">Home</a></li>
-      <li><a href="form.html">Vendor Registration</a></li>
+      <li><a class="active" href="./">Home</a></li>
+    
     </ul>
 
     <!-- google translate -->
@@ -55,7 +55,7 @@
       <h1 id="title">Vendor Registration</h1>
       <p id="description">The details that you provide using this form will be used to authorize you </br></p>
     </div>
-    <form class="sm:w-1/2 h-min shadow-lg mx-auto" id="survey-form" action="" enctype="multipart/form-data">
+    <form class="sm:w-1/2 h-min shadow-lg mx-auto" id="survey-form" action="/vendor-registration" method="post" >
       <div>
         <div class="form-group">
           <label for="name">Name</label>
@@ -73,14 +73,7 @@
           <input type="address" name="first_address" id="first address" class="form-control"
             placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" required />
         </div>
-        <div class="form-group">
-          <label for="landmark">
-            Landmark
-            <span class="hint"></span>
-          </label>
-          <input type="address" min="1" name="address" id="address" class="form-control"
-            placeholder="Enter the nearest landmark to identify the location." required />
-        </div>
+      
         <div class="form-group">
           <label for="landmark">
             Contact Number

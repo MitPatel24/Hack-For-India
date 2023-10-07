@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cssFiles/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../static/css/form.css" />
+
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Vendor Details</title>
+    <style>
+        button:hover{
+            background-color: #1A5376;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 flex-1 items-center justify-center h-screen">
+    <div class="nav flex justify-evenly">
+        <!-- Nav Logo & Name -->
+        <div class="navbar-logo">
+            <img src="../Images/logoartist.png">
+          <a href="index.html"><span style="color: red;"><span style="color: gold;">AR</span>tist</span></a>
+        </div>
+    
+        <!-- Nav menu -->
+        <ul class="nav-menu ">
+          <li><a class="active" href="../index.html">Home</a></li>
+          <li><a href="form.html">Vendor Registration</a></li>
+          <li><a href="form2.html">User Registration</a></li>
+
+        </ul>
+
+        <div class="mobile-menu">
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu" id="menu">
+                <!-- Your list items here -->
+                <li><a class="active" href="../index.html">Home</a></li>
+                <li><a href="form.html">Vendor Registration</a></li>
+                <li><a href="form2.html">User Registration</a></li>
+            </ul>
+        </div>
+        
+    
+        <!-- google translate -->
+        <div id="google_translate_element">
+          <script type="text/javascript"
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+      </div>
+    <div class="flex items-center justify-center flex-col">
+        <div class="flex items-center justify-center m-10 mx-4 max-w-screen-lg overflow-hidden rounded-xl border shadow-lg border-yellow-200 border-8">
+            <div class="flex flex-col overflow-hidden bg-white sm:flex-row md:h-80">
+                <div class="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
+                    <h2 class="text-xl font-bold text-gray-900 md:text-2xl lg:text-4xl">Priya From TamilNadu, Chennai</h2>
+                    <p class="mt-2 text-lg">Age: 42</p>
+                    <p class="mt-4 mb-4 max-w-md text-gray-600">She born and raised in the culturally rich city of Chennai, has honed her artistic skills to become a renowned creator of artifacts inspired by Tamil Nadu's heritage and tradition.</p>
+                    <p class="mt-4 mb-4 max-w-md text-gray-600">
+                        Priya specializes in crafting exquisite artifacts that capture the essence of Tamil Nadu's diverse culture. Her creations include intricately designed sculptures, pottery, and jewelry, all infused with traditional motifs and contemporary artistic sensibilities.</p>
+
+                    <div class="mt-auto">
+                        <!-- Vendor Registration Button -->
+                 
+                        <svg class="flex-0 group-hover:w-6 ml-4 h-6 w-0 transition-all" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- Rest of your content here -->
+                <div class="order-first ml-auto h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
+                    <img class="h-full w-full object-cover" src="../Images/priya.jpg" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+</body>
+<script>
+    // Get the toggle button and the navbar content
+    const toggleNavButton = document.getElementById('toggleNavButton');
+    const navbar = document.querySelector('.nav-menu');
+  
+    // Add a click event listener to the toggle button
+    toggleNavButton.addEventListener('click', function () {
+      // Toggle the "active" class on the navbar to show/hide it
+      navbar.classList.toggle('active');
+    });
+  </script>
+  
+</html>

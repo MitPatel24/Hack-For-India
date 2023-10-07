@@ -59,7 +59,7 @@
       <h1 id="title">User Registration</h1>
       <p id="description">The details that you provide using this form will be used to authorize you </br></p>
     </div>
-    <form class="sm:w-1/2 h-min shadow-lg mx-auto" id="survey-form" action="" enctype="multipart/form-data">
+    <form class="sm:w-1/2 h-min shadow-lg mx-auto" id="survey-form" action="/user-registration" method="post">
       <div>
         <div class="form-group">
           <label for="name">Name</label>
@@ -69,22 +69,7 @@
           <label for="email">Email</label>
           <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
         </div>
-        <div class="form-group">
-          <label for="address">
-            Street Address | City | Pincode
-            <span class="hint">(optional)</span>
-          </label>
-          <input type="address" name="first_address" id="first address" class="form-control"
-            placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" required />
-        </div>
-        <div class="form-group">
-          <label for="landmark">
-            Landmark
-            <span class="hint"></span>
-          </label>
-          <input type="address" min="1" name="address" id="address" class="form-control"
-            placeholder="Enter the nearest landmark to identify the location." required />
-        </div>
+
         <div class="form-group">
           <label for="landmark">
             Contact Number

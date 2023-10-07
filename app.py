@@ -49,6 +49,26 @@ def vendor_registration():
         return redirect("/")
     return render_template('form.html')
 
+@app.route('/user-registration',methods = ["GET", "POST"])
+def user_registration():
+    if request.method=="POST":
+        name=request.form.get('name')
+        email= request.form.get('email')
+        mobile= request.form.get('tel')
+
+        vendor_data = {
+            "name": name,
+            "email": email,
+            "mobile": mobile
+        }
+        user_collection.insert_one(vendor_data)
+        return redirect("/")
+    return render_template('form2.html')
+
+@app.route("/payment")
+def payment():
+    return render_template("payment.html")
+
 @app.route('/event')
 def event():
     return render_template("event.html")

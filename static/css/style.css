@@ -485,4 +485,9 @@ h3 {
   #buy-button {
     display: block;
   }
+
+  .nav-menu{
+    display: none;
+  }
 }
+

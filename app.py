@@ -1,15 +1,19 @@
 from flask import Flask, render_template, request, redirect
 from pymongo import MongoClient
 import json
-
+from dotenv import load_dotenv 
+import os
+load_dotenv()
 app = Flask(__name__)
 
-with open('config.json') as  f:
-    config = json.load(f)
     
-client = MongoClient(f"mongodb+srv://{config['mongo_username']}:{config['mongo_password']}@{config['mongo_host']}/")
-db_name= config['mongo_db']
-db = client.get_database(db_name)
+mongo_username = os.environ.get("MONGO_USERNAME")
+mongo_password = os.environ.get("MONGO_PASSWORD")
+mongo_host = os.environ.get("MONGO_HOST")
+mongo_db = os.environ.get("MONGO_DB")
+
+client = MongoClient(f"mongodb+srv://{mongo_username}:{mongo_password}@{mongo_host}/")
+db = client.get_database(mongo_db)
 
 vendor_collection_name = "Vendor"
 user_collection_name = "User"
